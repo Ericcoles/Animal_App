@@ -1,4 +1,4 @@
-.box {
+/* .box {
   background-color: rebeccapurple;
   text-align: center;
   height: 250px;
@@ -8,14 +8,23 @@
   display: inline-block;
   align-items: center;
   border-radius: 5px;
-}
+} */
 
-.image {
-  width: 12rem;
-  height: 8rem;
-  background-image: blur(40px);
+.card {
+  background-color: snow;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+  width: 250px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 1rem;
+  text-transform: capitalize;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+  position: relative;
 }
-
-.image :hover {
-  background-image: blur(111px);
+.card:hover {
+  box-shadow: 0 0 20px rgb(121, 121, 121);
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  cursor: pointer;
 }
